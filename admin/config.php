@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://boots-market.ru/admin/');
-define('HTTP_CATALOG', 'https://boots-market.ru/');
+define('HTTP_SERVER', 'https://xcom.uxp.ru/admin/');
+define('HTTP_CATALOG', 'https://xcom.uxp.ru/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://boots-market.ru/admin/');
-define('HTTPS_CATALOG', 'https://boots-market.ru/');
+define('HTTPS_SERVER', 'https://xcom.uxp.ru/admin/');
+define('HTTPS_CATALOG', 'https://xcom.uxp.ru/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/boots-market/admin/');

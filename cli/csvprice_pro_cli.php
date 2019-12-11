@@ -1,69 +1,166 @@
 <?php
 
 /*
- * CSV Price import/export 4 CLI - v1.0.0 (08/11/2017)
- * Require OpenCart 2.3.0.2
+ * CSV Price import/export 4 CLI - v2.0.1 (06.10.2015)
+ * Require OpenCart 2.0/2.1
  *
  * Email: support@costaslabs.com
  * Website: http://www.costaslabs.com/
  *
  * Changes:
- * v1.0.0 - first release for OpenCart 2.3.0.2
+ * 2.0.1 - first release
  *
  */
-define('CSVPRICE_PRO_DEBUG', '1');
-define('OPENCART_ADMIN_DIR', '/home/user/www/example.com/admin');
+define('CSVPRICE_PRO_DEBUG', '0');
 
-$root_dir = realpath(str_replace(array('csvprice_pro_cli.php', 'cli'), array('', ''), dirname(__FILE__)));
+define('OPENCART_ADMIN_DIR', '/home/user/www/example.com/admin/');
 
-// Admin directory
-$admin_dir = '';
-if (file_exists($root_dir . '/admin/config.php')) {
-	$admin_dir = $root_dir . '/admin';
+// Config file
+if ( file_exists(OPENCART_ADMIN_DIR . 'config.php') ) {
+	require_once (OPENCART_ADMIN_DIR . 'config.php');
 } else {
-	foreach (new DirectoryIterator($root_dir) as $dir_info) {
-		if (!$dir_info->isDot() && $dir_info->isDir()) {
-			$path = $dir_info->getPathname();
-			if (file_exists($path . '/config.php')) {
-				$admin_dir = $path;
+	die("ERROR: cli cannot access to config.php");
+}
+
+// Check VERSION
+$data = file_get_contents(OPENCART_ROOT_ADMIN_DIR . 'index.php');
+preg_match("/define\('VERSION', '([0-9]*\.[0-9]*)/i", $data, $matches);
+if ( isset($matches[1]) ) {
+	$version = $matches[1];
+} else {
+	$version = '2.0';
+}
+
+// Startup
+require_once (DIR_SYSTEM . 'startup.php');
+
+// Registry
+$registry = new Registry();
+
+// Loader
+$loader = new Loader($registry);
+$registry->set('load', $loader);
+
+// Config
+$config = new Config();
+$registry->set('config', $config);
+
+// Database
+$db = new DB(DB_DRIVER, DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+$registry->set('db', $db);
+
+
+// Settings
+$query = $db->query("SELECT * FROM " . DB_PREFIX . "setting WHERE store_id = '0'");
+
+foreach ( $query->rows as $setting ) {
+	if ( !$setting['serialized'] ) {
+		$config->set($setting['key'], $setting['value']);
+	} else {
+		switch ($version) {
+			case '2.1' :
+				$config->set($setting['key'], json_decode($setting['value'], true));
 				break;
-			}
+			default :
+				$config->set($setting['key'], unserialize($setting['value']));
+				break;
 		}
 	}
 }
 
-if (!$admin_dir) {
-	if (file_exists(OPENCART_ADMIN_DIR . '/config.php')) {
-		$admin_dir = OPENCART_ADMIN_DIR;
+// Url
+$url = new Url(HTTP_SERVER, $config->get('config_secure') ? HTTPS_SERVER : HTTP_SERVER);
+$registry->set('url', $url);
+
+// log File
+$log = new Log(date("Y-m-d") . '_csvprice_cli.log');
+$registry->set('log', $log);
+
+function error_handler($errno, $errstr, $errfile, $errline) {
+	global $log, $config;
+
+	// error suppressed with @
+	if ( error_reporting() === 0 ) {
+		return false;
 	}
-}
-if (!$admin_dir) {
-	die("ERROR: cli cannot access to config.php");
+
+	switch ($errno) {
+		case E_NOTICE :
+		case E_USER_NOTICE :
+			$error = 'Notice';
+			break;
+		case E_WARNING :
+		case E_USER_WARNING :
+			$error = 'Warning';
+			break;
+		case E_ERROR :
+		case E_USER_ERROR :
+			$error = 'Fatal Error';
+			break;
+		default :
+			$error = 'Unknown';
+			break;
+	}
+
+	if ( CSVPRICE_PRO_DEBUG ) {
+		$log->write('PHP ' . $error . ':  ' . $errstr . ' in ' . $errfile . ' on line ' . $errline);
+	}
+
+	return true;
 }
 
-// Config file
-require_once ($admin_dir . '/config.php');
+// Error Handler
+set_error_handler('error_handler');
 
-// Get VERSION
-$content = @file_get_contents($admin_dir . '/index.php');
-preg_match("/define\('VERSION', '([0-9\.]+)/i", $content, $matches);
-if (!isset($matches[1])) {
-	die("ERROR: cli cannot get index.php");
-} else {
-	define('OPENCART_VERSION', $matches[1]);
+// Request
+$request = new Request();
+$registry->set('request', $request);
+
+// Response
+$response = new Response();
+$registry->set('response', $response);
+
+// Cache
+$registry->set('cache', new Cache('file'));
+
+// Language
+$languages = array();
+
+$query = $db->query("SELECT * FROM `" . DB_PREFIX . "language`");
+
+foreach ( $query->rows as $result ) {
+	$languages[$result['code']] = $result;
 }
 
-if (version_compare(OPENCART_VERSION, '2.3.0.0') >= 0) {
-	$fdir = '2302';
-} elseif (version_compare(OPENCART_VERSION, '2.2.0.0') <= 0) {
-	$fdir = '2000';
-} else {
-	die("ERROR: cli OpenCart version is not supported");
+$config->set('config_language_id', $languages[$config->get('config_admin_language')]['language_id']);
+
+// Language
+$language = new Language($languages[$config->get('config_admin_language')]['directory']);
+$language->load($languages[$config->get('config_admin_language')]['directory']);
+$registry->set('language', $language);
+
+// Default Store
+$config->set('config_store_id', 0);
+
+// Event
+$event = new Event($registry);
+$registry->set('event', $event);
+
+$query = $db->query("SELECT * FROM " . DB_PREFIX . "event");
+
+foreach ( $query->rows as $result ) {
+	$event->register($result['trigger'], $result['action']);
 }
-// Startup
-if (file_exists($root_dir . '/cli/' . $fdir . '/cli_framework.php')) {
-	require_once($root_dir . '/cli/' . $fdir . '/cli_framework.php');
-} else {
-	die("ERROR: cli error startup cli_framework");
-}
+
+// Front Controller
+$controller = new Front($registry);
+
+// Router
+$action = new Action('csvprice_pro/app_cli');
+
+// Dispatch
+$controller->dispatch($action, new Action('error/not_found'));
+
+// Output
+$response->output();
 ?>

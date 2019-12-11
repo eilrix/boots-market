@@ -1,6 +1,12 @@
 <?php
+// Settings
+$_['setting_replace_eol'] = '0';
+
+// Heading
 $_['heading_title'] = 'Производители';
-$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
+$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
+
+// Text global
 $_['text_module'] = 'Модули';
 $_['text_extension'] = 'Расширения';
 $_['text_default'] = ' <b>(По умолчанию)</b>';
@@ -18,36 +24,39 @@ $_['text_no_results'] = 'Нет данных!';
 $_['text_none'] = ' --- Не выбрано --- ';
 $_['text_as'] = 'В виде %s';
 $_['text_confirm_delete'] = 'Удаление невозможно отменить! Вы уверены, что хотите это сделать?';
-$_['text_success_macros'] = 'Настройки макрсоов успешно обновлены!';
+
+// Text
 $_['text_import_mode_both'] = 'Обновить и Добавить';
 $_['text_import_mode_insert'] = 'Только добавить';
 $_['text_import_mode_update'] = 'Только обновить';
 $_['text_success_import'] = 'Импорт данных завершён!<br />Всего обработано <b>%s</b> строк!<br /><br /> Обновлено: <b>%s</b><br />Добавлено: <b>%s</b></b><br />Пропущено: <b>%s</b>';
+
+// Tabs
 $_['tab_export'] = 'Экспорт';
 $_['tab_import'] = 'Импорт';
 $_['tab_macros'] = 'Макросы';
+
+// button
 $_['button_export'] = 'Экспорт';
 $_['button_import'] = 'Импорт';
-$_['button_insert'] = 'Добавить';
-$_['button_remove'] = 'Удалить';
-$_['entry_table'] = 'Таблица';
-$_['entry_field_name'] = 'Имя поля';
-$_['entry_csv_name'] = 'Заголовок CSV';
-$_['entry_caption'] = 'Наименование';
-$_['entry_manufacturer'] = 'Производители';
-$_['entry_file_encoding'] = 'Кодировка файла';
-$_['entry_languages'] = 'Локализация';
-$_['entry_csv_delimiter'] = 'Разделитель полей CSV';
-$_['entry_csv_text_delimiter'] = 'Разделитель текста';
-$_['entry_store'] = 'Магазины';
-$_['entry_import_mode'] = 'Режим импорта';
-$_['entry_key_field'] = 'Ключевое поле для обновления';
+
+// Entry
+$_['entry_manufacturer'] = 'Производители:';
+$_['entry_file_encoding'] = 'Кодировка файла:';
+$_['entry_languages'] = 'Локализация:';
+$_['entry_csv_delimiter'] = 'Разделитель полей CSV:';
+$_['entry_csv_text_delimiter'] = 'Разделитель текста:';
+$_['entry_store'] = 'Магазины:';
+$_['entry_import_mode'] = 'Режим импорта:';
+$_['entry_key_field'] = 'Ключевое поле для обновления:';
 $_['entry_sort_order'] = 'Порядок сортировки';
-$_['entry_status'] = 'Статус';
-$_['entry_import_file'] = 'Импорт данных из файла';
-$_['entry_import_img_download'] = 'Включить докачку изображений по URL';
-$_['entry_import_id'] = 'Импортировать id производителя из файла';
-$_['entry_image_url'] = 'URL изображений';
+$_['entry_status'] = 'Статус:';
+$_['entry_import_file'] = 'Импорт данных из файла:';
+$_['entry_import_img_download'] = 'Включить докачку изображений по URL:';
+$_['entry_import_id'] = 'Импортировать id производителя из файла:';
+$_['entry_image_url'] = 'URL изображений:';
+
+// Helper
 $_['help_export_file_encoding'] = 'Кодировка файла. Ваш магазин работает в кодировке UTF-8';
 $_['help_export_csv_delimiter'] = 'Разделитель полей формата CSV';
 $_['help_import_mode'] = 'В режимах Только обновить и Обновить и Добавить, производится поиск в базе по ключевому полю, если совпадение найдено, то выбирается режим с обновлением';
@@ -55,6 +64,7 @@ $_['help_import_key_field'] = 'Ключевое поле, по которому 
 $_['help_import_img_download'] = 'Поле с изображением _IMAGE_ должно содержать URL-ссылку для скачивания';
 $_['help_export_all_manufacturer'] = 'Если производители не выбраны - экспортирует всех производителей';
 $_['help_import_id'] = 'При добавлении нового производителя позиции будет импортировано поле _ID_ как manufacturer_id. manufacturer_id может быть импортировано только если такого же id нет в базе.';
+
 $_['prop_descr'] = ' 
 prop_descr[0]="<p><b>Кодировка CSV-файла</b></p><p>Ваш магазин работает в кодировке UTF-8, что бы избежать проблем с импортом и экспортом используйте кодировку UTF-8.</p>";
 prop_descr[1]="<p><b>Разделитель полей CSV</b></p><p>Символ, который будет использован в качестве разделителя для отдельных колонок (значений) в CSV-файле.</p>";
@@ -68,13 +78,17 @@ prop_descr[8]="<p><b>Включить докачку изображений по
 prop_descr[9]="<p><b>Разделитель текста</b></p><p>Символ для обрамления текстовых полей, а так же значений, содержащих зарезервированные символы (двойная кавычка, запятая, точка с запятой, новая строка)</p>";
 prop_descr[32]="<p><b>URL изображений</b></p><p>Экспортирует значения _IMAGE_ и _IMAGES_ как ссылку на изображение вида http://www.example.com/dir/image_name.jpg</p>";
 ';
-$_['error_permission'] = 'У Вас нет прав для управления модулем CSV Price Pro import/export!';
-$_['error_directory_not_available'] = 'Рабочая директория модуля недоступна для записи или не существует';
+
+// Error
+$_['error_permission'] = 'У Вас нет прав для управления этим модулем!';
+$_['error_directory_not_available'] = 'Директория <b>system/csvprice_pro</b> не доступна для записи или не существует';
 $_['error_move_uploaded_file'] = 'Ошибка копирования файла!';
 $_['error_uploaded_file'] = 'Файл не загружен!';
-$_['error_copy_uploaded_file'] = 'Не удалось скопировать файл!';
 $_['error_export_empty_rows'] = 'Нет данных для экспорта!';
-$_['_ID_'] = 'id производителя';
+$_['error_copy_uploaded_file'] = 'Не удалось скопировать файл!';
+
+// Fields
+$_['_ID_'] = 'id категории';
 $_['_NAME_'] = 'Наименование';
 $_['_SEO_KEYWORD_'] = 'SEO Keyword';
 $_['_META_H1_'] = 'HTML-тег H1';

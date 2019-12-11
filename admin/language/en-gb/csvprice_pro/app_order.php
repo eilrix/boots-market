@@ -1,7 +1,7 @@
 <?php
 // Heading
 $_['heading_title'] = 'Orders';
-$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
+$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
 
 // Text global
 $_['text_module'] = 'Modules';
@@ -19,21 +19,11 @@ $_['text_hide_all'] = 'Hide unchecked';
 $_['text_all'] = 'All';
 $_['text_no_results'] = 'No results!';
 $_['text_none'] = ' --- None --- ';
-$_['text_confirm_delete'] = 'Deleting cannot be cancelled! Are you sure that you want to do it?';
-$_['text_datepicker'] = 'en';
-$_['text_cur_date'] = 'The current date';
-$_['text_clear'] = 'Clear';
 
 // Text
-$_['text_profile_load'] = 'Load Profile';
-$_['text_import_create_profile'] = 'Add New Profile';
-$_['text_profile_created'] = 'Profile has been created successfully!';
-$_['text_success_load_profile'] = 'Profile has been loaded successfully!';
-$_['text_profile_update_success'] = 'Profile settings updated successfully!';
-
 $_['text_missing'] = 'Missing orders';
-$_['text_order_id'] = 'Order ID';
-$_['text_invoice_no'] = 'Invoice Number';
+$_['text_order_id'] = 'Order ID:';
+$_['text_invoice_no'] = 'Invoice Number:';
 $_['text_invoice_date'] = 'Invoice date';
 $_['text_store_name'] = 'Store name';
 $_['text_store_id'] = 'Store ID';
@@ -73,13 +63,7 @@ $_['text_shipping_country'] = 'Shipping: Country';
 $_['text_shipping_zone'] = 'Shipping: Region / Oblast';
 $_['text_shipping_method'] = 'Shipping: Method of delivery';
 $_['text_shipping_code'] = 'Shipping: Shipping code';
-$_['text_shipping_cost'] = 'Shipping Cost';
 $_['text_comment'] = 'Comment';
-$_['text_tax_total'] = 'Tax Total amount';
-$_['text_coupon_title'] = 'Coupon Title';
-$_['text_coupon_total'] = 'Coupon Total amount';
-$_['text_voucher_title'] = 'Voucher Title';
-$_['text_voucher_total'] = 'Voucher Total amount';
 $_['text_total'] = 'Total amount';
 $_['text_order_status'] = 'Order Status';
 $_['text_affiliate_id'] = 'Partner ID';
@@ -99,56 +83,66 @@ $_['text_product_total'] = 'Product Total amount';
 $_['text_product_tax'] = 'Product Tax amount';
 $_['text_product_reward'] = 'Product Reward';
 $_['text_success_setting'] = 'Settings has been updated successfully!';
-$_['text_success_update_profile'] = 'Profile has been updated successfully!';
-$_['text_success_import'] = 'Data import has been completed!<br />Processed <b>%s</b> strings totally!<br /><br /> Updated: <b>%s</b><br /> Missing: <b>%s</b>';
 
 // Tabs
 $_['tab_export'] = 'Export';
-$_['tab_import'] = 'Import';
-$_['tab_setting'] = 'Export Settings';
+$_['tab_setting'] = 'Settings';
 
 // Butons
-$_['button_export'] = 'Export DATA';
-$_['button_import'] = 'Import DATA';
+$_['button_export'] = 'Export';
 $_['button_save'] = 'Save';
-$_['button_load'] = 'Load';
-$_['button_add'] = 'Add';
 
 // Entry
-$_['entry_file_encoding'] = 'File encoding';
-$_['entry_csv_delimiter'] = 'CSV field delimiter';
-$_['entry_csv_delimiter_text'] = 'Text delimiter';
-$_['entry_include_csv_title'] = 'Enable CSV title';
+$_['entry_file_encoding'] = 'File encoding:';
+//$_['entry_file_format'] = '';
+$_['entry_csv_delimiter'] = 'CSV field delimiter:';
+$_['entry_csv_delimiter_text'] = 'Text delimiter:';
+$_['entry_include_csv_title'] = 'Enable CSV title:';
 $_['entry_fields_set'] = 'Fields for export';
-$_['entry_order_id'] = 'Order ID';
-$_['entry_customer'] = 'Customer name';
-$_['entry_order_status'] = 'Order status';
-$_['entry_date_added'] = 'Adding date';
-$_['entry_date_modified'] = 'Change date';
-$_['entry_date_start'] = 'Start date';
-$_['entry_date_end'] = 'End date';
-$_['entry_time_interval'] = 'Time interval (last hours)';
-$_['entry_total_sum'] = 'Order total';
-$_['entry_order_status_id'] = 'Status id';
-$_['entry_order_comment'] = 'Comment';
-$_['entry_order_notify'] = 'Notify';
-$_['entry_api'] = 'API User';
-$_['entry_store'] = 'Stores';
-$_['entry_import_file'] = 'Import data from file';
+$_['entry_order_id'] = 'Order ID:';
+$_['entry_customer'] = 'Customer name:';
+$_['entry_order_status'] = 'Status:';
+$_['entry_date_added'] = 'Adding date:';
+$_['entry_date_modified'] = 'Change date:';
+$_['entry_total_sum'] = 'Order price:';
+//$_['entry_gzcompress'] = '';
 
-// Help
-$_['prop_descr'] = 'prop_descr[0]="Sending an order change notification only works if the user API is selected.";
-prop_descr[1]="Do not change the <b>Default *</b> profile, create a new profile for change.";';
+// JavaScript
+$_['js_datepicker_regional'] = "$.datepicker.regional['en'] = {
+    closeText: 'Close',
+    prevText: '<Prev',
+    nextText: 'Next>',
+    currentText: 'Today',
+    monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+    monthNamesShort: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+    dayNamesShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    dayNamesMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['en']);
+$.timepicker.regional['en'] = {
+    timeOnlyTitle: 'Select time',
+    timeText: 'Time',
+    hourText: 'Hours',
+    minuteText: 'Minutes',
+    secondText: 'Seconds',
+    millisecText: 'mSeconds',
+    timezoneText: 'Timezone',
+    currentText: 'Now',
+    closeText: 'Close',
+    timeFormat: 'HH:mm',
+    amNames: ['AM', 'A'],
+    pmNames: ['PM', 'P'],
+    isRTL: false
+};
+$.timepicker.setDefaults($.timepicker.regional['en']);";
+
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify CSV Price Pro import/export!';
+$_['error_permission'] = 'You have no rights to manage this module!';
 $_['error_export_empty_rows'] = 'No data for export!';
-$_['error_directory_not_available'] = 'The working directory <b>csvprice_pro</b> is not writable or does not exist!';
 $_['error_fields_not_selected'] = 'Export data are not selected!';
-$_['error_get_profile_import_field'] = 'Error reading import profile!';
-$_['error_uploaded_file'] = 'File is not uploaded!';
-
-// Help
-$_['prop_descr'] = ' 
-prop_descr[0]="Sending an order change notification only works if the user API is selected";
-prop_descr[1]="Do not change the <b>Default *</b> profile, create a new profile for change";
-';

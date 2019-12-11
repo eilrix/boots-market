@@ -404,6 +404,53 @@ class ControllerCommonColumnLeft extends Controller {
 				);
 			}
 					
+
+			if ($this->user->hasPermission('access', 'csvprice_pro/app_product')) {
+				$this->language->load('extension/module/csvprice_pro');
+				$csvprice_pro = array();
+
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_products'),
+					'href'     => $this->url->link('csvprice_pro/app_product', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_categories'),
+					'href'     => $this->url->link('csvprice_pro/app_category', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_manufacturers'),
+					'href'     => $this->url->link('csvprice_pro/app_manufacturer', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_crontab'),
+					'href'     => $this->url->link('csvprice_pro/app_crontab', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_customers'),
+					'href'     => $this->url->link('csvprice_pro/app_customer', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_orders'),
+					'href'     => $this->url->link('csvprice_pro/app_order', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$csvprice_pro[] = array(
+					'name'	   => $this->language->get('text_about'),
+					'href'     => $this->url->link('csvprice_pro/app_about', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);
+				$extension[] = array(
+					'name'	   => 'CSV Price Pro 4',
+					'href'     => '',
+					'children' => $csvprice_pro
+				);
+			}
+      
 			if ($extension) {					
 				$data['menus'][] = array(
 					'id'       => 'menu-extension',

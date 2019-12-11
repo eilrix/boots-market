@@ -1,16 +1,23 @@
 <?php
+// Settings
+$_['setting_replace_eol'] = '0';
+
+// Heading
 $_['heading_title'] = 'Категорії';
-$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
+$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
+
+// Text global
 $_['text_module'] = 'Модулі';
 $_['text_extension'] = 'Розширення';
-$_['text_default'] = ' <b>(За промовчанням)</b>';
-$_['text_yes'] = 'Так';
-$_['text_no'] = 'Ні';
+$_['text_default'] = ' <b>(За замовчуванням)</b>';
+$_['text_yes'] = 'Да';
+$_['text_no'] = 'Немає';
+$_['text_none'] = 'Не обрано';
 $_['text_enabled'] = 'Включено';
 $_['text_disabled'] = 'Відключено';
 $_['text_select_all'] = 'Виділити все';
 $_['text_unselect_all'] = 'Зняти виділення';
-$_['text_select'] = 'Вибрати';
+$_['text_select'] = 'Виділити';
 $_['text_show_all'] = 'Показати все';
 $_['text_hide_all'] = 'Приховати не позначені';
 $_['text_all'] = 'Всі';
@@ -18,47 +25,65 @@ $_['text_no_results'] = 'Немає даних!';
 $_['text_none'] = ' --- Не вибрано --- ';
 $_['text_as'] = 'У вигляді %s';
 $_['text_confirm_delete'] = 'Видалення неможливо скасувати! Ви впевнені, що бажаєте це зробити?';
+
+// Text
 $_['text_success_macros'] = 'Налаштування макросів успішно оновлені!';
 $_['text_import_mode_both'] = 'Оновити та Додати';
 $_['text_import_mode_delete'] = '* Видалити назавжди *';
 $_['text_import_mode_insert'] = 'Тільки додати';
 $_['text_import_mode_update'] = 'Тільки оновити';
 $_['text_success_import'] = 'Імпорт даних завершено!<br />Всього оброблено <b>%s</b> рядків!<br /><br /> Оновлено: <b>%s</b><br />Додано: <b>%s</b></b><br />Пропущено: <b>%s</b>';
+$_['text_show_help'] = 'Показати довідку';
+$_['text_select'] = 'Вибрати';
+
+// Tabs
 $_['tab_export'] = 'Експорт';
 $_['tab_import'] = 'Імпорт';
 $_['tab_macros'] = 'Макроси';
 $_['tab_setting'] = 'Налаштування';
+
+// Button
+$_['button_default'] = 'За замовчуванням';
 $_['button_export'] = 'Експорт';
 $_['button_import'] = 'Імпорт';
 $_['button_insert'] = 'Додати';
 $_['button_remove'] = 'Видалити';
 $_['button_save'] = 'Зберегти';
-$_['entry_file_encoding'] = 'Кодування файлу';
-$_['entry_languages'] = 'Локалізація';
-$_['entry_category'] = 'Категорії';
-$_['entry_category_delimiter'] = 'Роздільник для категорій';
-$_['entry_csv_delimiter'] = 'Роздільник рядків CSV';
-$_['entry_csv_text_delimiter'] = 'Роздільник тексту';
-$_['entry_store'] = 'Магазини';
-$_['entry_category_parent'] = 'Експортувати з батьківськими категоріями';
+$_['button_exec'] = 'Виконати';
+$_['button_load'] = 'Завантажити';
+$_['button_delete'] = 'Видалити';
+
+// Entry
+$_['entry_file_encoding'] = 'Кодування файлу:';
+$_['entry_languages'] = 'Локалізація:';
+$_['entry_category'] = 'Категорії:';
+$_['entry_category_delimiter'] = 'Роздільник для категорій:';
+$_['entry_csv_delimiter'] = 'Роздільник рядків CSV:';
+$_['entry_csv_text_delimiter'] = 'Роздільник тексту:';
+$_['entry_store'] = 'Магазини:';
+$_['entry_category_parent'] = 'Експортувати з батьківськими категоріями:';
 $_['entry_table'] = 'Таблиця';
-$_['entry_field_name'] = 'Ім&#39;я поля';
+$_['entry_field_name'] = 'Ім\'я поля';  
 $_['entry_csv_name'] = 'Поля CSV';
 $_['entry_caption'] = 'Назва';
-$_['entry_import_mode'] = 'Режим імпорту';
-$_['entry_key_field'] = 'Ключове поле для оновлення';
+$_['entry_import_mode'] = 'Режим імпорту:';
+$_['entry_key_field'] = 'Ключове поле для оновлення:';
 $_['entry_sort_order'] = 'Порядок сортування';
-$_['entry_status'] = 'Статус';
-$_['entry_import_category_disable'] = 'Вимкнути всі категорії перед імпортом';
-$_['entry_import_file'] = 'Імпорт даних з файлу';
-$_['entry_import_img_download'] = 'Увімкнути докачку зображень по URL';
-$_['entry_image_url'] = 'URL зображень';
+$_['entry_status'] = 'Статус:';
+$_['entry_import_category_disable'] = 'Вимкнути всі категорії перед імпортом:';
+$_['entry_import_file'] = 'Імпорт даних з файлу:';
+$_['entry_import_img_download'] = 'Увімкнути докачку зображень по URL:';
+$_['entry_image_url'] = 'URL зображень:';
+
+// Error
 $_['error_permission'] = 'Ви не маєте прав керувати цим модулем!';
-$_['error_directory_not_available'] = 'Робоча директорія модуля недоступна для запису або не існує';
+$_['error_directory_not_available'] = 'Директорія <b>system/csvprice_pro</b> недоступна для запису або не існує';
 $_['error_move_uploaded_file'] = 'Помилка копіювання файлу!';
 $_['error_uploaded_file'] = 'Файл не завантажений!';
 $_['error_copy_uploaded_file'] = 'Не вдалося скопіювати файл!';
 $_['error_export_empty_rows'] = 'Немає даних для експорту!';
+
+// Fields
 $_['_ID_'] = 'id категорії';
 $_['_NAME_'] = 'Найменування';
 $_['_FILTERS_'] = 'Фільтри';
@@ -76,6 +101,7 @@ $_['_TOP_'] = 'Головне меню';
 $_['_PARENT_ID_'] = 'id батьківської категорії';
 $_['_STORE_ID_'] = 'id магазинів';
 $_['_URL_'] = 'URL категорії';
+
 $_['prop_descr'] = ' 
 prop_descr[0]="<p><b>Кодування CSV-файлу</b></p><p>Ваш магазин працює у кодуванні UTF-8, що б уникнути проблем з імпортом та експортом використовуйте кодування UTF-8.</p>";
 prop_descr[1]="<p><b>Роздільник полів CSV</b></p><p>Символ, який буде використаний як роздільник для окремих колонок (значень) в CSV-файлі.</p>";

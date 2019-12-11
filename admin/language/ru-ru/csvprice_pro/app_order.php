@@ -1,6 +1,9 @@
 <?php
+// Heading
 $_['heading_title'] = 'Заказы';
-$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
+$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
+
+// Text global
 $_['text_module'] = 'Модули';
 $_['text_extension'] = 'Расширения';
 $_['text_default'] = ' <b>(По умолчанию)</b>';
@@ -16,18 +19,11 @@ $_['text_hide_all'] = 'Скрыть не отмеченные';
 $_['text_all'] = 'Все';
 $_['text_no_results'] = 'Нет данных!';
 $_['text_none'] = ' --- Не выбрано --- ';
-$_['text_cur_date'] = 'Текущая';
-$_['text_clear'] = 'Сбросить';
-$_['text_confirm_delete'] = 'Удаление невозможно отменить! Вы уверены, что хотите это сделать?';
-$_['text_datepicker'] = 'ru';
-$_['text_profile_load'] = 'Загрузить профиль';
-$_['text_import_create_profile'] = 'Создать новый профиль';
-$_['text_profile_created'] = 'Профиль успешно создан!';
-$_['text_success_load_profile'] = 'Профиль успешно загружен!';
-$_['text_profile_update_success'] = 'Настройки профиля успешно обновлены!';
+
+// Text
 $_['text_missing'] = 'Потерянные заказы';
-$_['text_order_id'] = '№ заказа';
-$_['text_invoice_no'] = '№ счета';
+$_['text_order_id'] = '№ заказа:';
+$_['text_invoice_no'] = '№ счета:';
 $_['text_invoice_date'] = 'Дата выписки счета';
 $_['text_store_name'] = 'Название магазина';
 $_['text_store_id'] = 'ID магазина';
@@ -67,13 +63,7 @@ $_['text_shipping_country'] = 'Доставка: Страна';
 $_['text_shipping_zone'] = 'Доставка: Регион / Область';
 $_['text_shipping_method'] = 'Доставка: Способ доставки';
 $_['text_shipping_code'] = 'Доставка: Код способа доставки';
-$_['text_shipping_cost'] = 'Доставка: Стоимость';
 $_['text_comment'] = 'Комментарий';
-$_['text_tax_total'] = 'Общая сумма налога';
-$_['text_coupon_title'] = 'Название купона';
-$_['text_coupon_total'] = 'Сумма купона';
-$_['text_voucher_title'] = 'Название сертификата';
-$_['text_voucher_total'] = 'Сумма сертификата';
 $_['text_total'] = 'Общая сумма';
 $_['text_order_status'] = 'Статус заказа';
 $_['text_affiliate_id'] = 'ID Партнера';
@@ -93,42 +83,66 @@ $_['text_product_total'] = 'Общая сумма товара';
 $_['text_product_tax'] = 'Сумма налога';
 $_['text_product_reward'] = 'Баллы';
 $_['text_success_setting'] = 'Настройки успешно обновлены!';
-$_['text_success_update_profile'] = 'Настройки профиля успешно обновлены!';
-$_['text_success_import'] = 'Импорт заказов завершён!<br />Всего обработано <b>%s</b> строк!<br /><br /> Обновлено: <b>%s</b><br />Пропущено: <b>%s</b>';
+
+// Tabs
 $_['tab_export'] = 'Экспорт';
-$_['tab_import'] = 'Импорт';
 $_['tab_setting'] = 'Настройки';
+
+// Butons
 $_['button_export'] = 'Экспорт';
-$_['button_import'] = 'Импорт';
 $_['button_save'] = 'Сохранить';
-$_['button_load'] = 'Загрузить';
-$_['button_add'] = 'Добавить';
-$_['entry_file_encoding'] = 'Кодировка файла';
-$_['entry_csv_delimiter'] = 'Разделитель полей';
-$_['entry_csv_delimiter_text'] = 'Разделитель текста';
-$_['entry_include_csv_title'] = 'Включить CSV заголовок';
+
+// Entry
+$_['entry_file_encoding'] = 'Кодировка файла:';
+//$_['entry_file_format'] = '';
+$_['entry_csv_delimiter'] = 'Разделитель полей:';
+$_['entry_csv_delimiter_text'] = 'Разделитель текста:';
+$_['entry_include_csv_title'] = 'Включить CSV заголовок:';
 $_['entry_fields_set'] = 'Данные для экспорта';
-$_['entry_order_id'] = '№ заказа';
-$_['entry_customer'] = 'Имя покупателя';
-$_['entry_order_status'] = 'Статус';
-$_['entry_date_added'] = 'Дата добавления';
-$_['entry_date_modified'] = 'Дата изменения';
-$_['entry_date_start'] = 'Начало';
-$_['entry_date_end'] = 'Конец';
-$_['entry_time_interval'] = 'Интервал (за последний час)';
-$_['entry_total_sum'] = 'Сумма заказа';
-$_['entry_order_status_id'] = 'Статус id';
-$_['entry_order_comment'] = 'Комментарий';
-$_['entry_order_notify'] = 'Уведомить покупателя';
-$_['entry_api'] = 'API пользователя';
-$_['entry_store'] = 'Stores';
-$_['entry_import_file'] = 'Импорт данных из файла';
-$_['prop_descr'] = '
-prop_descr[0]="Отправка уведомления об изменении статуса заказа работает только если выбрано API пользователя.";
-prop_descr[1]="Внимание: не изменяйте и не удаляйте профиль по умолчанию <b>Default *</b>, если Вам требуется работа с профилем, то создайте новый профиль.";';
-$_['error_permission'] = 'У Вас нет прав для управления модулем CSV Price Pro import/export!';
+$_['entry_order_id'] = '№ заказа:';
+$_['entry_customer'] = 'Имя покупателя:';
+$_['entry_order_status'] = 'Статус:';
+$_['entry_date_added'] = 'Дата добавления:';
+$_['entry_date_modified'] = 'Дата изменения:';
+$_['entry_total_sum'] = 'Сумма заказа:';
+//$_['entry_gzcompress'] = '';
+
+// JavaScript
+$_['js_datepicker_regional'] = "$.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: '<Пред',
+    nextText: 'След>',
+    currentText: 'Сегодня',
+    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+$.timepicker.regional['ru'] = {
+    timeOnlyTitle: 'Выберите время',
+    timeText: 'Время',
+    hourText: 'Часы',
+    minuteText: 'Минуты',
+    secondText: 'Секунды',
+    millisecText: 'Миллисекунды',
+    timezoneText: 'Часовой пояс',
+    currentText: 'Сейчас',
+    closeText: 'Закрыть',
+    timeFormat: 'HH:mm',
+    amNames: ['AM', 'A'],
+    pmNames: ['PM', 'P'],
+    isRTL: false
+};
+$.timepicker.setDefaults($.timepicker.regional['ru']);";
+
+// Error
+$_['error_permission'] = 'У Вас нет прав для управления этим модулем!';
 $_['error_export_empty_rows'] = 'Нет данных для экспорта!';
-$_['error_directory_not_available'] = 'Рабочая директория модуля недоступна для записи или не существует';
 $_['error_fields_not_selected'] = 'Данные для экспорта не выбраны!';
-$_['error_get_profile_import_field'] = 'Ошибка чтения профиля импорта!';
-$_['error_uploaded_file'] = 'Файл не загружен!';

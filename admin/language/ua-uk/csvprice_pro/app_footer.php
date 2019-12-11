@@ -1,5 +1,5 @@
 <?php
-// Text
+$_['module_name'] = 'CSV Price Pro import/export OC2';
 $_['text_copy'] = '<a target="_blank" href="http://www.opencartlabs.ru/">www.opencartlabs.ru</a> &copy; 2011-%s Всі права захищені.';
 $_['text_version'] = 'Версія %s';
 $_['text_show_help'] = 'Показати довідку';

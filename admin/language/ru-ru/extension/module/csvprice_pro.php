@@ -1,8 +1,7 @@
 <?php
-// Heading
-$_['heading_title'] = '<span style="color:#CB4B16;text-decoration:none;"><b>CSV Price Pro import/export 4</b></span>';
-$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
-
+$_['heading_title'] = 'CSV Price Pro import/export OC2 &copy; <a target="blank" href="http://opencartlabs.ru/">opencartlabs.ru</a>';
+$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
+$_['text_general'] = 'Основное';
 $_['text_products'] = 'Товары';
 $_['text_categories'] = 'Категории';
 $_['text_manufacturers'] = 'Производители';

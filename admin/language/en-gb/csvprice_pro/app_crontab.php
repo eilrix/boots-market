@@ -1,7 +1,7 @@
 <?php
 // Heading
 $_['heading_title'] = 'Task Scheduler';
-$_['heading_title_normal'] = 'CSV Price Pro import/export 3';
+$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
 
 // Text global
 $_['text_module'] = 'Modules';
@@ -33,8 +33,11 @@ $_['text_success'] = 'Settings has been updated successfully!';
 $_['button_save'] = 'Save';
 $_['button_cancel'] = 'Cancel';
 $_['button_delete'] = 'Delete';
-$_['button_insert'] = 'Insert';
+$_['button_insert'] = 'Add';
 $_['button_view'] = 'View';
+$_['button_close'] = 'Close';
+$_['button_edit'] = 'Edit';
+$_['button_add'] = 'Add';
 
 // Column
 $_['column_job_id'] = 'id';
@@ -43,6 +46,7 @@ $_['column_profile_name'] = 'Profile';
 $_['column_job_file_location'] = 'Source/Destination';
 $_['column_job_time_start'] = 'Start time';
 $_['column_status'] = 'Status';
+$_['column_action'] = 'Action';
 
 // Entry
 $_['entry_job_id'] = 'id';
@@ -57,21 +61,6 @@ $_['entry_file_path'] = 'The path to the file/URL';
 $_['entry_status'] = 'Status';
 $_['entry_job_offline'] = 'Starting on time';
 
-// Cli
-$_['cli_error_file_location_unknown'] = 'Incorrect source/destination path';
-$_['cli_error_file_not_writable'] = 'File is not within the allowed path';
-$_['cli_error_profile_not_found'] = 'The profile of the job can not be found';
-$_['cli_error_path_not_found'] = 'The file path can not be found';
-$_['cli_error_copy_file'] = 'ERROR: Cannot copy file from: %s';
-$_['cli_error_login_failure'] = 'Logon failure: unknown user name or bad password';
-$_['cli_error_ftp_connect'] = 'Cannot connect to the FTP server';
-$_['cli_error_url_entered'] = 'Bad URL entered';
-$_['cli_error_curl_not_installed'] = 'The CURL extension is not installed on this server';
-$_['cli_error_curl_download'] = 'ERROR: The URL does not exsist: %s Return code: %s';
-$_['cli_error_ftp_download'] = 'Error download file from FTP server';
-$_['cli_error_download_file'] = 'Error downloading file, the file size is null';
-$_['error_import_field_caption'] = 'Incorrect CSV header';
-$_['cli_clear_cache'] = 'Clear system/cache: done';
-
 // Error
-$_['error_permission'] = 'You have no rights to manage this module!';
+$_['error_permission'] = 'Warning: You do not have permission to modify CSV Price Pro import/export!';
+$_['error_import_field_caption'] = 'Incorrect CSV header';

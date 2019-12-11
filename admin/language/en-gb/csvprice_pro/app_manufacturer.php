@@ -1,10 +1,7 @@
 <?php
-// Settings
-$_['setting_replace_eol'] = '0';
-
 // Heading
 $_['heading_title'] = 'Manufacturer';
-$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
+$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
 
 // Text global
 $_['text_module'] = 'Modules';
@@ -26,6 +23,7 @@ $_['text_as'] = 'As %s';
 $_['text_confirm_delete'] = 'Deleting cannot be cancelled! Are you sure that you want to do it?';
 
 // Text
+$_['text_success_macros'] = 'Settings of macros has been updated successfully!';
 $_['text_import_mode_both'] = 'Update and Insert';
 $_['text_import_mode_insert'] = 'Insert only';
 $_['text_import_mode_update'] = 'Update only';
@@ -37,24 +35,30 @@ $_['tab_import'] = 'Import';
 $_['tab_macros'] = 'Macros';
 
 // button
-$_['button_export'] = 'Export';
-$_['button_import'] = 'Import';
+$_['button_export'] = 'Export DATA';
+$_['button_import'] = 'Import DATA';
+$_['button_insert'] = 'Add';
+$_['button_remove'] = 'Delete';
 
 // Entry
-$_['entry_manufacturer'] = 'Manufacturers:';
-$_['entry_file_encoding'] = 'File encoding:';
-$_['entry_languages'] = 'Localisation:';
-$_['entry_csv_delimiter'] = 'CSV field delimiter:';
-$_['entry_csv_text_delimiter'] = 'Text delimiter:';
-$_['entry_store'] = 'Stores:';
-$_['entry_import_mode'] = 'Import mode:';
-$_['entry_key_field'] = 'Key field for update:';
+$_['entry_table'] = 'Table';
+$_['entry_field_name'] = 'Field name';
+$_['entry_csv_name'] = 'CSV title';
+$_['entry_caption'] = 'Name';
+$_['entry_manufacturer'] = 'Manufacturers';
+$_['entry_file_encoding'] = 'File encoding';
+$_['entry_languages'] = 'Localisation';
+$_['entry_csv_delimiter'] = 'CSV field delimiter';
+$_['entry_csv_text_delimiter'] = 'Text delimiter';
+$_['entry_store'] = 'Stores';
+$_['entry_import_mode'] = 'Import mode';
+$_['entry_key_field'] = 'Key field for update';
 $_['entry_sort_order'] = 'Sort order';
-$_['entry_status'] = 'Status:';
-$_['entry_import_file'] = 'Data import from file:';
-$_['entry_import_img_download'] = 'Include the broken download resume of the URL images:';
-$_['entry_import_id'] = 'Import the ID manufacturer from file:';
-$_['entry_image_url'] = 'Image as URL:';
+$_['entry_status'] = 'Status';
+$_['entry_import_file'] = 'Data import from file';
+$_['entry_import_img_download'] = 'Download images by URL';
+$_['entry_import_id'] = 'Import ID manufacturer from file';
+$_['entry_image_url'] = 'Image as URL';
 
 // Helper
 $_['help_export_file_encoding'] = 'File encoding. Your store uses UTF-8';
@@ -73,17 +77,19 @@ prop_descr[3]="<p><b>Stores</b></p><p>If the stores are not chosen, the manufact
 prop_descr[4]="<p><b>Manufacturers</b></p><p>If the manufacturer are not chosen, the manufacturers will be exported (by default).</p>";
 prop_descr[5]="<p><b>Import mode</p></b><p><i>Update only</i> - in this mode the key field of a manufacturer is searched, in case of matching the manufacturer will be updated from the CSV file.</p><p><i>Insert only</i> - in this mode all categories will be added as the new from the CSV file independently there are these categories in database or not.</p><p><i>Update and Insert</i> - in this mode the key field of a product is searched, in case of matching the category will be updated from the CSV file, if the coincidence is not found then the category will be added as a new.</p>";
 prop_descr[6]="<p><b>Key field</b></p><p>Key field, on which the coincidence of category in database is looked for, is used in the modes <i>Update only</i>, <i>Update and Insert</i>.</p>";
-prop_descr[7]="<p><b>Import the ID manufacturer from file</b></p><p>Adding a new manufacturer the _ID_ field will be imported as manufacturer_id, import is carried out providing that there is not such manufacturer_id in database and the number does not exceed the maximum permitted value for manufacturer_id.</p>";
-prop_descr[8]="<p><b>Include the broken download resume of the URL images</b></p><p>Upload the images by links in the _IMAGE_ and _IMAGES_ fields.</p><p>Links should be as:<br /><br /> http://www.example.com/dir/image_name.jpg</p>";
+prop_descr[7]="<p><b>Import ID manufacturer from file</b></p><p>Adding a new manufacturer the _ID_ field will be imported as manufacturer_id, import is carried out providing that there is not such manufacturer_id in database and the number does not exceed the maximum permitted value for manufacturer_id.</p>";
+prop_descr[8]="<p><b>Download images by URL</b></p><p>Download the images by url in the _IMAGE_ and _IMAGES_ fields.</p><p>URL should be as:<br /><br /> http://www.example.com/dir/image_name.jpg</p>";
 prop_descr[9]="<p><b>Text Delimiter</b></p><p>CSV file that also includes quotes as delimiters.<br />E.g.: \"Smith\",\"Pete\",\"Canada\", quote all text cells.</p>";
+prop_descr[10]="<p><b>Stores</b></p><p>If the stores are not chosen, the manufacturer will be imported to all stores (by default).</p>";
+prop_descr[11]="<p><b>Localisation</b></p><p>In what language the data will be imported, for example the manufacturer name or description</p>";
 prop_descr[32]="<p><b>Image as URL</b></p><p>Exports value _IMAGE_ and _IMAGES_ as URL.</p><p>E.g.: http://www.example.com/dir/image_name.jpg</p>";
 ';
 
 // Error
-$_['error_permission'] = 'You have no rights to manage this module!';
-$_['error_directory_not_available'] = 'Directory <b>system/csvprice_pro</b> is not writable or available';
+$_['error_permission'] = 'Warning: You do not have permission to modify CSV Price Pro import/export!';
+$_['error_directory_not_available'] = 'The working directory <b>csvprice_pro</b> is not writable or does not exist!';
 $_['error_move_uploaded_file'] = 'File copying error!';
-$_['error_uploaded_file'] = 'File is not loaded!';
+$_['error_uploaded_file'] = 'File is not uploaded!';
 $_['error_copy_uploaded_file'] = 'Failed to copy file!';
 $_['error_export_empty_rows'] = 'No data for export!';
 

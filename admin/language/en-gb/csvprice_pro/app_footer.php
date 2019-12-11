@@ -1,5 +1,6 @@
 <?php
 // Text
+$_['module_name'] = 'CSV Price Pro import/export OC2';
 $_['text_copy'] = '<a target="_blank" href="http://www.costaslabs.com/">www.costaslabs.com</a> &copy; 2011-%s All rights reserved.';
 $_['text_version'] = 'Version %s';
 $_['text_show_help'] = 'Show help';

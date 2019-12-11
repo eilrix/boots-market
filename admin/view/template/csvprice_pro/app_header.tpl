@@ -1,22 +1,13 @@
-<?php if(isset($mdemo_title)) {?>
-<div class="g-row">
-	<?php echo $mdemo_title;?>
-</div>
+<?php if ($mod_demo) { ?>
+<p><?php echo $mdemo_title; ?></p>
 <?php } ?>
-<div class="g-row f-main-menu">
-	<div class="g-4 f-menu-header">
-		<h3><?php echo $heading_title; ?></h3>
-	</div>
-	<div class="g-8">
-		<ul class="f-nav f-pull-right">
-			<?php foreach( $top_menu as $menu_item ) { ?>
-			<?php if($menu_item['active'] == 1) { ?>
-			<li class="active"><a href="<?php echo $menu_item['url'];?>"><?php echo $menu_item['text'];?></a></li>
-			<?php } else {?>
-			<li><a href="<?php echo $menu_item['url'];?>"><?php echo $menu_item['text'];?></a></li>
-			<?php }?>
-			<?php }?>
-		</ul>
-		<!-- end f-nav -->
-	</div>
-</div>
+<h4><?php echo $csvprice_pro_heading_title; ?></h4>
+<p class="csvpricepro-main_menu">
+<?php foreach( $top_menu as $menu_item ) { ?>
+	<?php if ($menu_item['active'] == 1) { ?>
+	<a href="<?php echo $menu_item['url'];?>" class="btn btn-info active"><?php echo $menu_item['text'];?></a>
+	<?php } else { ?>
+	<a href="<?php echo $menu_item['url'];?>" class="btn btn-info"><?php echo $menu_item['text'];?></a>
+	<?php } ?>
+<?php } ?>
+</p>

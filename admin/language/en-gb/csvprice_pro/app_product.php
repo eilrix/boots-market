@@ -1,10 +1,7 @@
 <?php
-// Settings
-$_['setting_replace_eol'] = '0';
-
 // Heading
 $_['heading_title'] = 'Products';
-$_['heading_title_normal'] = 'CSV Price Pro import/export 4';
+$_['heading_title_normal'] = 'CSV Price Pro import/export OC2';
 
 // Text global
 $_['text_module'] = 'Modules';
@@ -22,16 +19,17 @@ $_['text_hide_all'] = 'Hide unchecked';
 $_['text_all'] = 'All';
 $_['text_no_results'] = 'No results!';
 $_['text_none'] = ' --- None --- ';
-$_['text_as'] = 'As %s';
+$_['text_as'] = 'As ';
 $_['text_confirm_delete'] = 'Deleting cannot be cancelled! Are you sure that you want to do it?';
 
 // Text
-$_['text_default_options_setting'] = 'Set default settings for options';
+$_['text_default_options_setting'] = 'Default settings for <b>Product Options</b>';
+$_['text_default_product_setting'] = 'Default settings for <b>New Products</b> ("Update and Insert" and "Insert only")';
 $_['text_default_category_setting'] = 'Set default settings for categories';
 $_['text_export_category'] = '_CATEGORY_';
 $_['text_export_category_id'] = '_CATEGORY_ID_';
-$_['text_profile_load'] = 'Load profile:';
-$_['text_import_create_profile'] = 'Create new profile:';
+$_['text_profile_load'] = 'Load Profile';
+$_['text_import_create_profile'] = 'Add New Profile';
 $_['text_profile_created'] = 'Profile has been created successfully!';
 $_['text_success_load_profile'] = 'Profile has been loaded successfully!';
 $_['text_profile_update_success'] = 'Profile settings updated successfully!';
@@ -46,110 +44,121 @@ $_['text_import_mode_insert'] = 'Insert only';
 $_['text_import_mode_update'] = 'Update only';
 $_['text_import_mode_supplement'] = 'Supplement only';
 $_['text_import_skip'] = 'Ignore on product Update';
-$_['text_import_load_profile'] = 'Load profile:';
+$_['text_import_load_profile'] = 'Load profile';
 $_['text_success_setting'] = 'Settings has been updated successfully!';
 $_['text_success_macros'] = 'Settings of macros has been updated successfully!';
 $_['text_success_import'] = 'Data import has been completed!<br />Processed <b>%s</b> strings totally!<br /><br /> Updated: <b>%s</b><br />Added: <b>%s</b><br />Deleted: <b>%s</b><br />Missing: <b>%s</b>';
+$_['text_begin_auto_import'] = 'Warning: Please do not close the window during importing data!';
+$_['text_processed_auto_import'] = 'Warning: Please do not close the window during importing data!<br /><br />Processed <b>%s</b> strings totally!<br /><br /> Updated: <b>%s</b><br />Added: <b>%s</b><br />Deleted: <b>%s</b><br />Missing: <b>%s</b>';
+$_['text_success_auto_import'] = 'Data import has been completed!<br /><br />Processed <b>%s</b> strings totally!<br /><br /> Updated: <b>%s</b><br />Added: <b>%s</b><br />Deleted: <b>%s</b><br />Missing: <b>%s</b><br /><br />Execution time (&mu;s) / Memory usage (MB): %s';
+$_['text_related_both'] = 'Both';
+$_['text_related_irreciprocal'] = 'Irreciprocal';
+
+// Text Help
+$_['text_help_csv_column_names'] = 'This setting of column headers for the CSV file works only for the Import tab, this settings are saved when you update or create a profile on the tab Import';
 
 // Tabs
+$_['tab_setting'] = 'Default Settings';
+$_['tab_fields'] = 'CSV column names';
 $_['tab_export'] = 'Export';
 $_['tab_import'] = 'Import';
 $_['tab_macros'] = 'Macros';
-$_['tab_setting'] = 'Settings';
-
-// Caption
-$_['caption_product_setting'] = 'Select default settings for new products to import in "Update and Insert" and "Insert only" modes';
 
 // button
 $_['button_default'] = 'By default';
-$_['button_export'] = 'Export';
-$_['button_import'] = 'Import';
-$_['button_insert'] = 'Insert';
+$_['button_export'] = 'Export DATA';
+$_['button_import'] = 'Import DATA';
+$_['button_insert'] = 'Add';
 $_['button_remove'] = 'Remove';
 $_['button_save'] = 'Save';
 $_['button_exec'] = 'Execute';
 $_['button_load'] = 'Load';
 $_['button_delete'] = 'Delete';
+$_['button_add'] = 'Add';
 
 // Entry
-$_['entry_file_encoding'] = 'File encoding:';
-$_['entry_languages'] = 'Localisation:';
-$_['entry_category'] = 'Categories:';
-$_['entry_export_category'] = 'Category export:';
-$_['entry_category_delimiter'] = 'Category delimiter:';
-$_['entry_category_parent'] = 'Parent categories:';
-$_['entry_csv_delimiter'] = 'CSV field delimiter:';
-$_['entry_csv_text_delimiter'] = 'Text delimiter:';
-$_['entry_store'] = 'Stores:';
-$_['entry_tax_class'] = 'Tax Class:';
-$_['entry_minimum'] = 'Minimum Quantity:';
-$_['entry_subtract'] = 'Subtract Stock:';
-$_['entry_stock_status'] = 'Out Of Stock Status:';
-$_['entry_shipping'] = 'Requires Shipping:';
-$_['entry_length_class'] = 'Length Class:';
-$_['entry_weight_class'] = 'Weight Class:';
+$_['entry_file_encoding'] = 'File encoding';
+$_['entry_languages'] = 'Localisation';
+$_['entry_category'] = 'Categories';
+$_['entry_export_category'] = 'Category export';
+$_['entry_category_delimiter'] = 'Category delimiter';
+$_['entry_category_parent'] = 'Parent categories';
+$_['entry_csv_delimiter'] = 'CSV field delimiter';
+$_['entry_csv_text_delimiter'] = 'Text delimiter';
+$_['entry_store'] = 'Stores';
+$_['entry_tax_class'] = 'Tax Class';
+$_['entry_minimum'] = 'Minimum Quantity';
+$_['entry_subtract'] = 'Subtract Stock';
+$_['entry_stock_status'] = 'Out Of Stock Status';
+$_['entry_shipping'] = 'Requires Shipping';
+$_['entry_length_class'] = 'Length Class';
+$_['entry_weight_class'] = 'Weight Class';
+$_['entry_layout'] = 'Layout';
 $_['entry_sort_order'] = 'Sort order';
-$_['entry_status'] = 'Status:';
-$_['entry_option_type'] = 'Type:';
-$_['entry_option_required'] = 'Required:';
+$_['entry_status'] = 'Status';
+$_['entry_option_type'] = 'Type';
+$_['entry_option_required'] = 'Required';
 $_['entry_option_value'] = '';
-$_['entry_option_quantity'] = 'Default Quantity:';
-$_['entry_option_subtract_stock'] = 'Subtract Stock:';
-$_['entry_option_price_prefix'] = 'Defailt Price prefix';
-$_['entry_option_points_default'] = 'Defailt Points:';
-$_['entry_option_points_prefix'] = 'Defailt Points prefix:';
-$_['entry_option_weight_prefix'] = 'Defailt Weight prefix:';
-$_['entry_option_weight_default'] = 'Defailt Weight:';
+$_['entry_option_quantity'] = 'Default Quantity';
+$_['entry_option_subtract_stock'] = 'Subtract Stock';
+$_['entry_option_price_prefix'] = 'Default Price prefix';
+$_['entry_option_points_default'] = 'Default Points';
+$_['entry_option_points_prefix'] = 'Default Points prefix';
+$_['entry_option_weight_prefix'] = 'Default Weight prefix';
+$_['entry_option_weight_default'] = 'Default Weight';
 $_['entry_option_template'] = '';
 $_['entry_table'] = 'Table';
 $_['entry_field_name'] = 'Field name';
 $_['entry_csv_name'] = 'CSV title';
 $_['entry_caption'] = 'Name';
-$_['entry_export_limit'] = 'Export limit:';
-$_['entry_export_related'] = 'Product related export:';
-$_['entry_product_filter'] = 'Use product filter:';
-$_['entry_filter_quantity'] = 'Quantity:';
-$_['entry_filter_name'] = 'Product Name contains:';
-$_['entry_filter_sku'] = 'SKU contains:';
-$_['entry_filter_location'] = 'Location contains:';
-$_['entry_filter_price_range'] = 'Price in range:';
-$_['entry_filter_price'] = 'Product price:';
-$_['entry_filter_status'] = 'Product status:';
-$_['entry_manufacturer'] = 'Manufacturers:';
-$_['entry_import_calc_mode'] = 'Price calculation mode:';
-$_['entry_import_calc_value'] = 'Calc value:';
-$_['entry_import_category'] = 'Categories:';
-$_['entry_import_category_disable'] = 'Disable all categories before import:';
+$_['entry_export_limit'] = 'Export limit';
+$_['entry_export_related'] = 'Product related export';
+$_['entry_product_filter'] = 'Use product filter';
+$_['entry_filter_quantity'] = 'Quantity';
+$_['entry_filter_name'] = 'Product Name contains';
+$_['entry_filter_sku'] = 'SKU contains';
+$_['entry_filter_location'] = 'Location contains';
+$_['entry_filter_price_range'] = 'Price in range';
+$_['entry_filter_price'] = 'Product price';
+$_['entry_filter_status'] = 'Product status';
+$_['entry_manufacturer'] = 'Manufacturers';
+$_['entry_import_calc_mode'] = 'Price calculation mode';
+$_['entry_import_calc_value'] = 'Calc value';
+$_['entry_import_category'] = 'Categories';
+$_['entry_import_category_disable'] = 'Disable all categories before import';
 $_['entry_import_delimiter_category'] = '_CATEGORY_ field delimiter';
-$_['entry_import_file'] = 'Import data from file:';
-$_['entry_import_fill_category'] = 'Fill parent categories:';
-$_['entry_import_iter_limit'] = 'Strings number per Iteration:';
-$_['entry_import_main_category'] = 'Main category:';
-$_['entry_import_manufacturer'] = 'Manufacturer:';
-$_['entry_import_mode'] = 'Import mode:';
-$_['entry_import_product_disable'] = 'Disable all products before import:';
-$_['entry_import_quantity_reset'] = 'Reset Quantity before import:';
-$_['entry_import_empty_field'] = 'Ignore empty fields:';
+$_['entry_import_file'] = 'Import data from file';
+$_['entry_import_fill_category'] = 'Fill parent categories';
+$_['entry_import_iter_limit'] = 'Strings number per Iteration';
+$_['entry_import_main_category'] = 'Main category';
+$_['entry_import_manufacturer'] = 'Manufacturer';
+$_['entry_import_mode'] = 'Import mode';
+$_['entry_import_product_disable'] = 'Disable all products before import';
+$_['entry_import_quantity_reset'] = 'Reset Quantity before import';
+$_['entry_import_empty_field'] = 'Ignore empty fields';
 $_['entry_import_exclude_filter'] = 'Do not update if';
-$_['entry_import_exclude_filter_name'] = 'Product Name contains:';
-$_['entry_import_exclude_filter_desc'] = 'Description contains:';
-$_['entry_import_exclude_filter_attr'] = 'Attribute name contains:';
-$_['entry_import_image_path'] = 'Image path:';
-$_['entry_import_category_top'] = 'Top menu:';
-$_['entry_import_category_column'] = 'Columns:';
-$_['entry_import_img_download'] = 'Include the broken download resume of the URL images:';
-$_['entry_key_field'] = 'Key field for update:';
-$_['entry_import_id'] = 'Import ID:';
-$_['entry_image_url'] = 'Image as URL:';
+$_['entry_import_exclude_filter_name'] = 'Product Name contains';
+$_['entry_import_exclude_filter_desc'] = 'Description contains';
+$_['entry_import_exclude_filter_attr'] = 'Attribute name contains';
+$_['entry_import_image_path'] = 'Image path';
+$_['entry_import_category_top'] = 'Top menu';
+$_['entry_import_category_column'] = 'Columns';
+$_['entry_import_img_download'] = 'Download images by URL';
+$_['entry_key_field'] = 'Key field for update';
+$_['entry_import_id'] = 'Import ID';
+$_['entry_image_url'] = 'Image as URL';
+$_['entry_exclude_if'] = 'Exclude filter';
+$_['entry_import_related_type'] = 'Product Related Type';
 
 // Error
-$_['error_permission'] = 'You have no rights to manage this module!';
-$_['error_directory_not_available'] = 'Directory <b>system/csvprice_pro</b> is not writable or available';
+$_['error_permission'] = 'Warning: You do not have permission to modify CSV Price Pro import/export!';
+$_['error_directory_not_available'] = 'The working directory <b>csvprice_pro</b> is not writable or does not exist!';
 $_['error_move_uploaded_file'] = 'File copying error!';
-$_['error_uploaded_file'] = 'File is not loaded!';
+$_['error_uploaded_file'] = 'File is not uploaded!';
 $_['error_copy_uploaded_file'] = 'Failed to copy file!';
 $_['error_export_empty_rows'] = 'No data for export!';
 $_['error_import_field_caption'] = 'Incorrect CSV header';
+$_['error_unknown_error'] = 'Unknown error...';
 
 // Fields
 $_['_ID_'] = 'ID';
@@ -217,7 +226,7 @@ prop_descr[13]="<p><b>Import ID from file</b></p><p>When adding a new position t
 prop_descr[14]="<p><b>Fill parent categories</b></p><p>Set displaying product in all parent categories, works only for the _CATEGORY_ and _MAIN_CATEGORY_ fields.</p>";
 prop_descr[15]="<p><b>Top menu</b></p><p>When creating a category on the basis of the _CATEGORY_ field - include to show in the top menu (only for the main categories).</p>";
 prop_descr[16]="<p><b>Columns</b></p><p>When creating a category on the basis of the _CATEGORY_ field - set the number of columns in the drop-down menu of categories (only for the main categories).</p>";
-prop_descr[17]="<p><b>Include the broken download resume of the URL images</b></p><p>Upload the images by links in the _IMAGE_ and _IMAGES_ fields.</p><p>Links should be as:<br /><br /> http://www.example.com/dir/image_name.jpg</p>";
+prop_descr[17]="<p><b>Download images by URL</b></p><p>Download the images by url in the _IMAGE_ and _IMAGES_ fields.</p><p>URL should be as:<br /><br /> http://www.example.com/dir/image_name.jpg</p>";
 prop_descr[18]="<p><b>Calc value</b></p><p>The values have to be specified in the form of integers or fractional numbers where the delimiter of fractional part must be a point.</p>";
 prop_descr[19]="<p><b>Ignore empty fields</b></p><p>If the option is included, the data will not be overwritten with empty values when updating the product, for example if there are no data in the _OPTIONS_ field (empty value), when updating the product the existing options of the product remain unchanged.</p>";
 prop_descr[20]="<p><b>Strings number per Iteration</b></p><p>0 = not use, it is established at a large number of products (depending on the hosting settings).</p>";
@@ -233,4 +242,5 @@ prop_descr[29]="<p><b>_CATEGORY_ field delimiter</b></p><p>Delimiter between the
 prop_descr[30]="<p><b>Reset quantity before import</b></p><p>If the option is included, before import the quantity of all products, which there are in database, will be established equal to zero. </p>";
 prop_descr[31]="<p><b>Text Delimiter</b></p><p>CSV file that also includes quotes as delimiters.<br />E.g.: \"Smith\",\"Pete\",\"Canada\", quote all text cells.</p>";
 prop_descr[32]="<p><b>Image as URL</b></p><p>Exports value _IMAGE_ and _IMAGES_ as URL.</p><p>E.g.: http://www.example.com/dir/image_name.jpg</p>";
+prop_descr[33]="Do not change the <b>Default *</b> profile, create a new profile for change.";
 ';

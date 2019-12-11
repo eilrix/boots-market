@@ -1,0 +1,92 @@
+.htabs {
+    border-bottom: 1px solid #edf0f2;
+}
+
+.htabs a {
+    background-color: #edf0f2;
+}
+
+.htabs a.selected {
+    border-left: 1px solid #edf0f2;
+    border-right: 1px solid #edf0f2;
+    border-top: 3px solid #37BCED;
+    color: #555;
+    font-weight: normal;
+    padding: 8px 15px 12px 15px;
+}
+
+.jetcache-top-heading {
+	height: 44px; overflow:  hidden; background-color: #16A9DE; color: #fff;
+}
+
+.jetcache-top-heading a {
+	color: #fff;
+}
+
+a.markbutton {
+    background-color: #37BCED;
+}
+
+.jetcache-table-add td {
+	border: 1px solid transparent;
+	font-weight: normal !important;
+}
+
+.jetcache-table-add td a {
+	font-weight: normal;
+}
+
+
+.jetcache-table-add tfoot {
+    background: none;
+}
+
+
+
+.jetcache-table-add thead td {
+	background-color: #edf0f2;
+}
+
+
+.jetcache-back  {
+	background-color: #edf0f2;
+}
+
+
+.jetcache-text-center {
+	text-align: center;
+}
+
+.jetcache-table-help {
+	display: none;
+}
+
+.jetcache-top-copyright {
+height: 44px; float:right; background-color: #16A9DE; colopr: #fff;
+}
+
+
+a.markbuttono, a.markbuttono:visited {
+    background-color: #37BCED;
+}
+
+a.markbutton:hover, a.markbuttono:hover {
+    background-color: #16A9DE !important;
+    color: #fff;
+}
+
+.jetcache-table-help-href {
+	float: right;
+	padding: 0 8px 0 8px;
+	background-color: #fff;
+	color: #37BCED;
+	cursor: pointer;
+}
+
+.sc-color-clearcache {
+	color: #37BCED;
+}
+
+.jetcache-width-100 {
+	width: 100%;
+}

@@ -1,0 +1,19 @@
+/* checkbox */
+#filter_vier .checka:before, #filter_vier .checkb:hover:before, #filter_vier .checka:hover:before {
+    background: #57BB09 none repeat scroll 0% 0%;
+    border-radius: 50%;
+}
+#filter_vier .checkb:before {
+    background: #666 none repeat scroll 0% 0%;
+}
+#filter_vier .checkb:before, #filter_vier .checka:before {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+    top: 1px;
+}
+.checkb.curs_def:hover:before {
+    border-radius: 0 !important;
+    background: #666 none repeat scroll 0% 0% !important;
+}
+/* end checkbox */

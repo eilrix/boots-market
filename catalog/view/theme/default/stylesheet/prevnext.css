@@ -1,0 +1,17 @@
+#nav-left, #nav-right {
+  height: 22px; 
+  width:  112px;
+  padding: 0;
+}
+#nav-left {
+    background: url("../image/prevnext.png") no-repeat scroll center -22px transparent;
+}
+#nav-right {
+    background: url("../image/prevnext.png") no-repeat scroll center -66px transparent;
+}
+#nav-left:hover {
+    background: url("../image/prevnext.png") no-repeat scroll center 0 transparent;
+}
+#nav-right:hover {
+    background: url("../image/prevnext.png") no-repeat scroll center -44px transparent;
+}

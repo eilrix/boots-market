@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>showmore</name>
+    <code>showmore</code>
+    <version>1.0</version>
+    <author>ked-krosovkin.ru</author>
+    <link>https://ked-krosovkin.ru/</link>
+    <file path="catalog/controller/product/category.php">
+        <operation>
+            <search>
+                <![CDATA[
+                    if ($category_info) {
+                ]]>
+            </search>
+            <add position="after">
+                <![CDATA[
+                	$this->document->addScript('catalog/view/javascript/showmore.js');
+                	$this->document->addStyle('catalog/view/theme/default/stylesheet/showmore.css');
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/product/search.php">
+        <operation>
+            <search>
+                <![CDATA[
+                    $data['products'] = array();
+                ]]>
+            </search>
+            <add position="after">
+                <![CDATA[
+                	$this->document->addScript('catalog/view/javascript/showmore.js');
+                	$this->document->addStyle('catalog/view/theme/default/stylesheet/showmore.css');
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/product/product.php">
+        <operation>
+            <search>
+                <![CDATA[
+                    $this->load->model('catalog/category');
+                ]]>
+            </search>
+            <add position="after">
+                <![CDATA[
+                	$this->document->addScript('catalog/view/javascript/showmore.js');
+                	$this->document->addStyle('catalog/view/theme/default/stylesheet/showmore.css');
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/oct_techstore/template/product/category.tpl">
+        <operation>
+            <search>
+                <![CDATA[
+<a href="<?php echo $product['href']; ?>" class="lazy_link">
+                ]]>
+            </search>
+            <add position="replace">
+                <![CDATA[
+<a onclick="get_oct_popup_product_view('<?php echo $product['product_id']; ?>');">
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/oct_techstore/template/product/product.tpl">
+        <operation>
+            <search>
+                <![CDATA[
+<?php echo $content_bottom; ?>
+                ]]>
+            </search>
+            <add position="after">
+                <![CDATA[
+<div id="LoadMoreHere" class="col-sm-12"><?php echo $product_id; ?></div>
+                ]]>
+            </add>
+        </operation>
+    </file>
+    
+
+</modification>

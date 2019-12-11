@@ -1,0 +1,115 @@
+<modification>
+    <name><![CDATA[<font color="#0000"><b>Microdata Plugin for OC 2.3</font>]]></name>
+    <code>Microdata_Plugin_OCext</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[OCEXT]]></author>
+    <link>www.ocext.com</link>   	             
+
+	<file path="catalog/controller/common/header.php">
+		<operation>
+			<search><![CDATA[$data['title'] = $this->document->getTitle();]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                $microdataseourlgenerator = $this->model_extension_feed_ocext_feed_generator_google->getScript();
+                if($microdataseourlgenerator){
+                    $data['analytics'][] = $microdataseourlgenerator;
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>	
+        <file path="catalog/controller/product/product.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>
+        <file path="catalog/controller/product/category.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>	
+        <file path="catalog/controller/product/manufacturer.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>	
+        <file path="catalog/controller/product/special.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>	
+        <file path="catalog/controller/information/information.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>
+        <file path="catalog/controller/information/contact.php">
+		<operation>
+			<search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+			<add position="after"><![CDATA[
+                
+                //Microdata_Plugin_OCext - microdata
+                $this->load->model('extension/feed/ocext_feed_generator_google');
+                if(isset($data)){
+                    $this->model_extension_feed_ocext_feed_generator_google->addScript($data);
+                }
+                //end Microdata_Plugin_OCext - microdata
+
+]]></add>	
+		</operation>
+	</file>
+                                			
+</modification>

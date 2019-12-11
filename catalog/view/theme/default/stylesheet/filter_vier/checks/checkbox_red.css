@@ -1,0 +1,16 @@
+/* checkbox */
+#filter_vier .checkb:before, #filter_vier .checka:before {
+    width: 16px;
+    height: 17px;
+    padding-right: 5px !important;
+    margin-right: 4px;
+    top: 5px;/**/
+    /*bottom: -5px;/**/
+}
+#filter_vier .checka:before {
+    background: transparent url("../../../image/filter_vier/checkbox_red.png") no-repeat scroll 0px 0px;
+}
+#filter_vier .checkb:before {
+    background: transparent url("../../../image/filter_vier/checkbox_red.png") no-repeat scroll -20px -1px;
+}
+/* end checkbox */

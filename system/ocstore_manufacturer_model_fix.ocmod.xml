@@ -1,0 +1,18 @@
+<modification>
+	<name>ocStore 2.3.0.2.3 SQL SELECT manufacturer model fix </name>
+	<version>1.0.0.0</version>
+	<code>ocstore23023_sql_select_manufacturer_model_fix</code>
+	<author>costas</author>
+	<link>http://costaslabs.com</link>
+	
+	<file path="admin/model/catalog/manufacturer.php">
+		<operation error="skip">
+			<search ><![CDATA[AND name LIKE]]></search>
+			<add position="replace"><![CDATA[AND md.name LIKE]]></add>
+		</operation>
+		<operation error="skip">
+			<search ><![CDATA[ORDER BY name]]></search>
+			<add position="replace"><![CDATA[ORDER BY md.name]]></add>
+		</operation>
+	</file>
+</modification>

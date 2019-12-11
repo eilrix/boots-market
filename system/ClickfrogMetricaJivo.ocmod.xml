@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>clickfrog</name>
+    <code>clickfrog</code>
+    <version>1.0</version>
+    <author>ked-krosovkin.ru</author>
+    <link>https://ked-krosovkin.ru/</link>
+    <file path="catalog/view/theme/oct_techstore/template/common/footer.tpl">
+        <operation>
+            <search>
+                <![CDATA[
+                    </footer>
+                ]]>
+            </search>
+            <add position="before">
+                <![CDATA[
+
+
+                ]]>
+            </add>
+        </operation>
+    </file>
+
+</modification>

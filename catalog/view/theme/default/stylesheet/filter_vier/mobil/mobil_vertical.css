@@ -1,0 +1,38 @@
+/* mobil version vertical */
+@media (max-width: 767px) {
+    #column-left, #column-right {
+        display: block !important;
+        z-index: 10;
+    }
+    #column-left > *:not(#block_filter_vier), #column-right > *:not(#block_filter_vier) {
+        display: none !important;
+    }
+    .box-content {
+        display: block !important;
+    }
+    #name_filter h4 {
+        position: relative;
+    }
+    #name_filter h4:hover {
+        color: inherit !important;
+    }
+    #column-left {
+        /*float: none !important;*/
+    }
+    #name_filter {
+        cursor: pointer;
+        border: 1px solid #CCC;
+        box-shadow: none;
+        display: block !important;
+        background: linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+        background: -moz-linear-linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+        background: -webkit-linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+        background: -o-linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+        background: -ms-linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+        background: -khtml-linear-gradient(#FFF, #E5EDF2 0%, #FAFDFE 56%, #E9E9E9) repeat scroll 0% 0%;
+    }
+    #filter_vier {
+       display: none;
+    }
+}
+/* end mobil version vertical */

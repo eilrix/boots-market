@@ -1,0 +1,3 @@
+/* scroll */
+.onli_param:not(.slid), .onli_param.null:not(.slid){overflow-x:hidden;overflow-y:auto;margin:0;padding:2px 0;max-height:%1$dpx;}
+/* end scroll */

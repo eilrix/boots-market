@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="acec160b-c050-4db0-b9f0-75a4fc32b083" name="Default" comment="" />
+    <ignored path="upload_MegaFilterPlus.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="upload_MegaFilterPlus" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload_MegaFilterPlus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload_MegaFilterPlus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload_MegaFilterPlus" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acec160b-c050-4db0-b9f0-75a4fc32b083" name="Default" comment="" />
+      <created>1489830734803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1489830734803</updated>
+      <workItem from="1489830738017" duration="478000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="478000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/mega_filter_plus.ocmod.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/mfilter_plus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7157">
+          <caret line="421" column="33" selection-start-line="421" selection-start-column="33" selection-end-line="421" selection-end-column="33" />
+          <folding>
+            <marker date="1482238366030" expanded="true" signature="7163:7217" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="8156:8540" placeholder="CREATE TABLE... IF" />
+            <marker date="1482238366030" expanded="true" signature="8574:8842" placeholder="CREATE TABLE... IF" />
+            <marker date="1482238366030" expanded="true" signature="9437:9506" placeholder="ALTER TABLE `${DB_PREFIX}product`... " />
+            <marker date="1482238366030" expanded="true" signature="9531:9618" placeholder="ALTER TABLE `${DB_PREFIX}mfilter_values`... " />
+            <marker date="1482238366030" expanded="true" signature="9734:9801" placeholder="ALTER TABLE `${DB_PREFIX}product`... " />
+            <marker date="1482238366030" expanded="true" signature="9827:9889" placeholder="ALTER TABLE `${DB_PREFIX}mfilter_tags`... " />
+            <marker date="1482238366030" expanded="true" signature="10112:10199" placeholder="ALTER TABLE `${DB_PREFIX}mfilter_values`... " />
+            <marker date="1482238366030" expanded="true" signature="10484:10551" placeholder="ALTER TABLE `${DB_PREFIX}product`... " />
+            <marker date="1482238366030" expanded="true" signature="10578:10640" placeholder="ALTER TABLE `${DB_PREFIX}mfilter_tags`... " />
+            <marker date="1482238366030" expanded="true" signature="12016:12177" placeholder="SELECT REPLA... ${DB_PREFIX}product_attribute" />
+            <marker date="1482238366030" expanded="true" signature="12206:12323" placeholder="SELECT `text... ${DB_PREFIX}product_attribute" />
+            <marker date="1482238366030" expanded="true" signature="12362:12462" placeholder="SELECT COUNT... *" />
+            <marker date="1482238366030" expanded="true" signature="12390:12456" placeholder="SELECT * FRO... ${DB_PREFIX}product_attribute" />
+            <marker date="1482238366030" expanded="true" signature="12549:12622" placeholder="SELECT `opti... ${DB_PREFIX}option_value" />
+            <marker date="1482238366030" expanded="true" signature="12655:12714" placeholder="SELECT COUNT... ${DB_PREFIX}option_value" />
+            <marker date="1482238366030" expanded="true" signature="12801:12874" placeholder="SELECT `filt... ${DB_PREFIX}filter_description" />
+            <marker date="1482238366030" expanded="true" signature="12907:12960" placeholder="SELECT COUNT... ${DB_PREFIX}filter" />
+            <marker date="1482238366030" expanded="true" signature="13044:13109" placeholder="SELECT `tag`... ${DB_PREFIX}product_description" />
+            <marker date="1482238366030" expanded="true" signature="13142:13208" placeholder="SELECT COUNT... ${DB_PREFIX}product_description" />
+            <marker date="1482238366030" expanded="true" signature="14223:14330" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_tags" />
+            <marker date="1482238366030" expanded="true" signature="14445:14528" placeholder="INSERT INTO ${DB_PREFIX}mfilter_tags" />
+            <marker date="1482238366030" expanded="true" signature="14641:14784" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="15031:15164" placeholder="INSERT INTO ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="15436:15490" placeholder="SELECT COUNT... ${DB_PREFIX}product" />
+            <marker date="1482238366030" expanded="true" signature="15570:15644" placeholder="SELECT * FRO... ${DB_PREFIX}product" />
+            <marker date="1482238366030" expanded="true" signature="16923:16977" placeholder="DROP TABLE I... " />
+            <marker date="1482238366030" expanded="true" signature="17830:17893" placeholder="ALTER TABLE `${DB_PREFIX}`... " />
+            <marker date="1482238366030" expanded="true" signature="18272:18335" placeholder="ALTER TABLE `${DB_PREFIX}`... " />
+            <marker date="1482238366030" expanded="true" signature="18654:18726" placeholder="SELECT * FRO... ${DB_PREFIX}product_attribute" />
+            <marker date="1482238366030" expanded="true" signature="18784:18859" placeholder="SELECT * FRO... ${DB_PREFIX}product_option_value" />
+            <marker date="1482238366030" expanded="true" signature="18939:19008" placeholder="SELECT * FRO... ${DB_PREFIX}product_filter" />
+            <marker date="1482238366030" expanded="true" signature="19071:19159" placeholder="SELECT produ... ${DB_PREFIX}product_description" />
+            <marker date="1482238366030" expanded="true" signature="21788:21842" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="22111:22163" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_tags" />
+            <marker date="1482238366030" expanded="true" signature="22524:22610" placeholder="INSERT INTO ${DB_PREFIX}mfilter_tags" />
+            <marker date="1482238366030" expanded="true" signature="23036:23174" placeholder="INSERT INTO ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="23658:23720" placeholder="SELECT * FRO... ${DB_PREFIX}product" />
+            <marker date="1482238366030" expanded="true" signature="24443:24535" placeholder="SELECT * FRO... ${DB_PREFIX}product" />
+            <marker date="1482238366030" expanded="true" signature="24709:24799" placeholder="SELECT * FRO... ${DB_PREFIX}product" />
+            <marker date="1482238366030" expanded="true" signature="25151:25222" placeholder="SELECT * FRO... ${DB_PREFIX}mfilter_values" />
+            <marker date="1482238366030" expanded="true" signature="26744:26832" placeholder="DELETE FROM " />
+            <marker date="1482238366030" expanded="true" signature="27571:27655" placeholder="DELETE FROM " />
+            <marker date="1482238366030" expanded="true" signature="27931:27997" placeholder="SELECT * FRO... ${DB_PREFIX}filter" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
